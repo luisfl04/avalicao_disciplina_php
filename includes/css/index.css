@@ -1,0 +1,68 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Estilos personalizados do menu: */
+.menu-navegacao{
+  background-color: lightblue;
+  font-family: arial;
+}
+
+.menu-navegacao-logo{
+  margin-left: 20px;
+  color: gray !important;
+  font-weight: bold !important;
+}
+
+.menu-navegacao-link{
+  margin-right: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+/* Estilos personalizados do footer: */
+.footer{
+  background-color: lightblue;
+  font-family: arial;
+  color: black;
+  font-weight: bold;
+  height: 100px ! important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;;
+}
+
+/* Estilos personalizados do formulário: */
+.formulario-titulo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.input-field{
+  margin-bottom: 20px ! important;
+}
+
+.tempo-uso{
+  margin-bottom: 30px ! important;
+}
+
+.botao{
+  margin-right: 10px;
+  height: 20px;
+  font-weight: bold;
+  width: 110px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+#botao-enviar{
+  background-color: lightgreen ! important;
+}
+
+#botao-limpar{
+  background-color: lightsalmon ! important;
+}
+

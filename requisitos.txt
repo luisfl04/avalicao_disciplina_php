@@ -1,0 +1,11 @@
+- Responsividade em telas
+- Menu de navegação adaptável para mobile e desktop
+- Formulário que contenha:
+  - Caixa de texto
+  - checkobox
+  - Checklist do tipo dropbox
+  - Uma caixa de texto maior com parágrafos
+  - Botão para limpar dados
+  - Botão para submeter dados
+- Arquivo que recebe os dados e os salva de alguma forma.
+- Página que listará os dados. Usar loop na renderização.
