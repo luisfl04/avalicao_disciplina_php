@@ -1,20 +1,25 @@
 <?php
 
-require_once 'Computador.php'; // Apenas necessário se você for usar métodos/validação adicionais
+// Obtendo classe:
+require_once 'Computador.php'; 
+
+// Iniciando seção:
 session_start();
 
-
-
+// Obtendo as instâncias da classe:
 $computadores = $_SESSION['computadores'] ?? [];
+
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
   <meta charset="UTF-8">
   <title>Valores cadastrados</title>
   <!-- Materialize CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../includes/css/index.css">
 
   <style>
     body {
@@ -25,12 +30,13 @@ $computadores = $_SESSION['computadores'] ?? [];
       color: #000;
     }
   </style>
+
 </head>
 <body>
     <?php include('../includes/header.php'); ?>
 
   <div class="container">
-    <h4>Valores cadastrados</h4>
+    <h4 class="listagem-titulo">Valores cadastrados</h4>
 
     <?php if (count($computadores) > 0): ?>
       <div class="responsive-table">
@@ -60,14 +66,15 @@ $computadores = $_SESSION['computadores'] ?? [];
         </table>
       </div>
     <?php else: ?>
-      <p>Nenhum computador cadastrado ainda.</p>
+      <p class="listagem-mensagem-vazio">Nenhum computador cadastrado ainda.</p>
     <?php endif; ?>
 
     <br>
-    <a href="index.php" class="btn white black-text">Voltar ao formulário</a>
+    <div class="botao-voltar">
+      <a href="index.php" class="btn white black-text">Voltar ao formulário</a>
+    </div>
   </div>
 
-  <?php include('../includes/footer.php'); ?>
 
 
   <!-- JS Materialize -->

@@ -66,3 +66,36 @@
   background-color: lightsalmon ! important;
 }
 
+/* Estilos página de listagem: */
+.listagem-titulo{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.listagem-mensagem-vazio{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: monospace;
+}
+
+.botao-voltar{
+  display: flex;
+  justify-content: center;
+}
+
+.mensagem-confirmacao{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mensagem-requisicao-invalida{
+  text-align: center;
+  margin-top: 30px;
+}
+

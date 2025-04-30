@@ -1,3 +1,3 @@
-<div class="footer center align-self-end py-3">
+<div class="footer center align-self-end ">
     <p>Luis Felipe &copy; 2025</p>
 </div>
