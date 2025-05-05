@@ -54,12 +54,12 @@ $computadores = $_SESSION['computadores'] ?? [];
           <tbody>
             <?php foreach ($computadores as $comp): ?>
               <tr>
-                <td><?= htmlspecialchars($comp->marca) ?></td>
-                <td><?= htmlspecialchars($comp->processador) ?></td>
-                <td><?= htmlspecialchars($comp->ram) ?></td>
-                <td><?= htmlspecialchars(implode(', ', $comp->softwares)) ?></td>
-                <td><?= htmlspecialchars($comp->tempoUso) ?></td>
-                <td><?= nl2br(htmlspecialchars($comp->satisfacao)) ?></td>
+                <td><?= htmlspecialchars($comp->getMarca()) ?></td>
+                <td><?= htmlspecialchars($comp->getProcessador()) ?></td>
+                <td><?= htmlspecialchars($comp->getRam()) ?></td>
+                <td><?= htmlspecialchars(implode(', ', $comp->getSoftwares())) ?></td>
+                <td><?= htmlspecialchars($comp->getTempoUso()) ?></td>
+                <td><?= nl2br(htmlspecialchars($comp->getSatisfacao())) ?></td>
               </tr>
             <?php endforeach; ?>
           </tbody>
